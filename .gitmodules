@@ -1,0 +1,3 @@
+[submodule "noise"]
+	path = noise
+	url = https://github.com/caseman/noise
