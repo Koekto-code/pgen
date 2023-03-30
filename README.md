@@ -10,6 +10,9 @@ Python (same version as in blender)
 Working C compiler
 ```
 
+Caution: To remove the addon, you need to disable it first, then quit blender.
+.pyd libraries aren't unloaded when disabling the plugin.
+
 # Installing (windows)
 Launch the build.bat, modify if necessary (e.g. for building with MinGW)
 
