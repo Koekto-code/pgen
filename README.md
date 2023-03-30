@@ -2,9 +2,11 @@
 Planet generator addon for blender 2.8+
 
 # Build requirements
+```
 Installed blender
 Python (same version as in blender)
 Working C compiler
+```
 
 # Building (windows)
 Launch the build.bat, modify if necessary (e.g. for building with MinGW)
