@@ -1,6 +1,8 @@
 # pgen
 Planet generator addon for blender 2.8+
 
+![Image](./images/example.png)
+
 # Build requirements
 ```
 Installed blender
