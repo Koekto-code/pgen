@@ -39,6 +39,7 @@ py -%BL_NATIVE_PYTHON% setup.py install --prefix=..\build
 cd ..
 
 xcopy pgen "%BL_DATA_PATH%\scripts\addons\pgen" /e /h /i /y /q
-xcopy "build\lib\site-packages" "%BL_DATA_PATH%\scripts\addons\pgen" /e /h /i /y /q
+for /f "tokens=*" %%i in ('dir /B "build\lib\site-packages"') do set NOISE_SUBDIR=%%i
+xcopy "build\lib\site-packages\%NOISE_SUBDIR%" "%BL_DATA_PATH%\scripts\addons\pgen\lib" /e /h /i /y /q
 
 pause

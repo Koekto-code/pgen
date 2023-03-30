@@ -22,7 +22,7 @@ from bpy.props import (
     FloatProperty,
     FloatVectorProperty,
 )
-from noise import pnoise3, snoise3
+from . lib.noise import pnoise3, snoise3
 
 ### Linear math ====================================================================
 
