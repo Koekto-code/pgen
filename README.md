@@ -14,10 +14,21 @@ Caution: To remove the addon, you need to disable it first, then quit blender.
 .pyd libraries aren't unloaded when disabling the plugin.
 
 # Installing (windows)
-Launch the build.bat, modify if necessary (e.g. for building with MinGW)
+1. Modify install.bat if building with MinGW
+2. Launch and wait 2 mins
 
 # Installing (other OS)
 1. Build noise package (see instructions on github)
-2. zip `pgen` and content of `site-packages` or other path
-  which was used by python setuptools, into pgen.zip
+2. Make following archive:
+```
+pgen.zip
+|  pgen/
+|==|  __init__.py
+|==|  lib/
+|=====|  noise/
+|========|  __init__.py
+|========|  ...
+|=====|  EGG-INFO/
+|========|  ...
+```
 3. Install the add-on from the archive
